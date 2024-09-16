@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Games</title>
+    <link rel="stylesheet" href="./style.css" />
+    <audio src="./sounds/gameOver.mp3" id="gameOver"></audio>
+    <audio src="./sounds/userClick.mp3" id="userClick"></audio>
+    <audio src="./sounds/gameClick.mp3" id="gameClick"></audio>
+    <audio src="./sounds/StartBtn.mp3" id="startSound"></audio>
+  </head>
+  <body>
+    <div class="headings">
+      <h1>Simon Says Game</h1>
+      <h2>Click on Start Button to start the game</h2>
+      <h2 id="Highest">Highest Score = <span id="highScore">0</span></h2>
+    </div>
+
+    <div class="btn-container">
+      <div class="line-one">
+        <div class="btn red" type="button" id="red"></div>
+        <div class="btn orange" type="button" id="orange"></div>
+      </div>
+      <button id="startBtn">Start</button>
+      <div class="line-two">
+        <div class="btn green" type="button" id="green"></div>
+        <div class="btn purple" type="button" id="purple"></div>
+      </div>
+    </div>
+
+
+    <button class="howBtn">How to Play🤔</button>
+    
+    <div class="how" style="display: none;">
+      <p>1 : Click Start Button to Start/ReStart the Game</p>
+      <p>2 : Now Game Blink the color remember that color</p>
+      <p>3 : Then player Should click the Blinked Color</p>
+      <p>4 : Again Game Blink the new color remember that color and Player should Click privious color then New Bliked color</p>
+      <p>5 : Again game blink new color</p>
+      <p>6 : Now Player should click privious two colors and new color to maintain the Sequence</p>
+      <p>7 : If the player jumble the Sequence or Break the Sequence then <b>Game Over</b></p>
+      <br>
+      <p>Play with Friends and Maintain the Colors Sequence to Make New High Score </p>
+      <p>Enjoy the Game🎮</p>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
